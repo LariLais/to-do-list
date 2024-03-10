@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+  border: none;
+}
+
+body {
+  animation: background 3s ease-in-out infinite alternate-reverse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: whitesmoke;
+  width: 40%;
+  height: 80%;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px 1px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.container_titulo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container_input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#input_tarefa {
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+}
+
+#btn_adicionar {
+  width: 8%;
+  background-color: lightskyblue;
+  border-radius: 0 10px 10px 0;
+}
+
+#btn_adicionar:hover {
+  cursor: pointer;
+  background-color: cornflowerblue;
+}
+
+.container_tarefas {
+    width: 100%;
+    height: 100%;
+}
+
+.tarefa {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.nome_tarefa {
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.btn_editar, .btn_deletar {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.btn_editar:hover {
+    cursor: pointer;
+    background-color: rgb(175, 255, 121);
+}
+
+.btn_deletar:hover {
+    cursor: pointer;
+    background-color: rgb(250, 117, 117);
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+}
+
+/* ANIMAÇÕES */
+
+@keyframes background {
+  0% {
+    background-color: cornflowerblue;
+  }
+  100% {
+    background-color: lightskyblue;
+  }
+}
